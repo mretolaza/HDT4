@@ -8,14 +8,23 @@ import java.util.Vector;
  */
 public class vector<E> implements iStack<E> {
 
-   private Vector <E> v=new Vector <E>(1);
+ /**
+ * Se crea una variable tipo vector 
+ */
+private Vector <E> v=new Vector <E>(1);
 
+	/* (non-Javadoc)
+	 * @see iStack#push(java.lang.Object)
+	 */
 	@Override
 	public void push(E p) {
 		v.add(p);
 
 	}
 
+	/* (non-Javadoc)
+	 * @see iStack#pop()
+	 */
 	@Override
 	public E pop() {
 		E p = null;
@@ -25,6 +34,9 @@ public class vector<E> implements iStack<E> {
 		return p;
 	}
 
+	/* (non-Javadoc)
+	 * @see iStack#isEmpty()
+	 */
 	@Override
 	public boolean isEmpty() {
 		return (v.isEmpty());

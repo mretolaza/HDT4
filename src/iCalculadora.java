@@ -8,10 +8,13 @@
  */
 public interface iCalculadora {
 
-	/**
+	/**Metodo que opera, recibe un parametro de la interfaz de iStack 
 	 * @param n
 	 * @param v
 	 * @return
+	 * Recibe un parametro tipo string que se encarga de operar los valores y un parametro tipo 
+	 * stack que se encarga de realizar las diferentes operaciones del stack /llevar a cabo sus 
+	 * metodos) 
 	 */
 	public double operar (String n, iStack v);
 

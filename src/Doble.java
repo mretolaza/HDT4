@@ -1,32 +1,55 @@
+/**
+ * @author María Mercedes Retolaza, 16339 
+ * Esta clase implementa los métodos de la lista doble 
+ *
+ * @param <E>
+ */
 public class Doble<E> extends AbstractList<E> implements iStack<E>{
 	protected int count;
 	protected DoublyLinkedNode<E> head;
 	protected DoublyLinkedNode<E> tail;
 
 
+	/**
+	 * Constructor 
+	 */
 	public Doble(){
 		head = null;
 		tail = null;
 		count = 0;
 	}
 
+	/**
+	 * @param value
+	 * @param head
+	 * @param object
+	 */
 	private Doble(E value, Doble<E> head, Object object) {
 		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
 	}
 
 
+	/**
+	 * @param value
+	 */
 	public void addFirst(E value){
 		head = new DoublyLinkedNode<E>(value, head, null);
 		if (tail == null) tail = head;
 		count++;
 	}
 
+	/**
+	 * @param value
+	 */
 	public void addLast(E value){
 		tail = new DoublyLinkedNode<E>(value, null, tail);
 		if (head == null) head = tail;
 		count++;
 	}
 
+	/**
+	 * @return
+	 */
 	public E removeLast(){
 		DoublyLinkedNode<E> temp = tail;
 		return null;

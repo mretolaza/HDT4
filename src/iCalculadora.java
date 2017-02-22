@@ -18,14 +18,14 @@ public interface iCalculadora {
 	 */
 	public double operar (String n, iStack v);
 
-	/**
+	/**Metodo que realza la suma de dos valores dentro de la operacion infix
 	 * @param a
 	 * @param b
 	 * @return
 	 */
 	public double suma(double a, double b);
 
-	/**
+	/**Metodo que realiza la resta de dos valores dentro de la operacion 
 	 * @param a
 	 * @param b
 	 * @return

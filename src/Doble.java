@@ -11,7 +11,7 @@ public class Doble<E> extends AbstractList<E> implements iStack<E>{
 
 
 	/**
-	 * Constructor 
+	 * Constructor De la lista doble 
 	 */
 	public Doble(){
 		head = null;

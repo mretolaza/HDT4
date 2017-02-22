@@ -1,9 +1,19 @@
 import java.util.Stack;
 
+/**
+ * @author María Mercedes Retolaza Reyna,16339 
+ *
+ * @param <E>
+ */
 class StackFactory<E> {
 //selecciona la implementacion a utilizar para un stack
 //se utiliza el patron Factory
-   public iStack<E> getStack(String entry) {
+	
+   /**El Siguiente metodo se encarga de ser implementado con el factory 
+ * @param entry
+ * @return
+ */
+public iStack<E> getStack(String entry) {
     // seleccion de la implementacion a utilizar:
 	if (entry.equals("AL"))
             return new StackArrayList<E>(); //regresa ArrayList

@@ -1,16 +1,26 @@
 import java.util.ArrayList;
 
+/**
+ * @author María Mercedes Retolaza Reyna,16339
+ * @param <E>
+ */
 public class StackArrayList<E> implements iStack<E>
 
 {
 	protected ArrayList<E> data;
 
+	/**
+	 * Creación del ArrayList
+	 */
 	public StackArrayList()
 	// post: constructs a new, empty stack
 	{
 		data = new ArrayList<E>();
 	}
 
+        /* (non-Javadoc)
+         * @see iStack#push(java.lang.Object)
+         */
         @Override
 	public void push(E p)
 	// post: the value is added to the stack

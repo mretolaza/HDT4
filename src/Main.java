@@ -1,11 +1,18 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
+/**
+ * @author María Mercedes Retolaza Reyna, 16339 
+ *
+ */
 public class Main {
 
+	/**
+	 * @param args
+	 * @throws IOException
+	 */
 	public static void main(String[] args) throws IOException{
 
 		Calculadora c = new Calculadora();
@@ -50,7 +57,7 @@ public class Main {
                                 System.out.println(a);
 				break;
 			case 6:
-				System.out.println("Gracias por utilizar el programa");
+				System.out.println("Puede Retirarse");
 
 				System.exit(0); 
 
